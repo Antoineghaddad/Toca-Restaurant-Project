@@ -1,0 +1,153 @@
+.offer-line{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:10%;
+    height:100%;
+    width:90%;
+    margin:10% auto;
+    
+    
+}
+.offers-title{
+    color:white;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    margin-top:2%;
+    font-size:60px;
+    text-shadow: 10px 5px #000000;
+}
+.offer-page-title{
+    color:white;
+    font-family: 'Revalia', cursive;
+    text-align: center;
+    margin-top:10%;
+    text-shadow: 10px 5px #000000;
+}
+span{
+    color:rgb(206, 58, 22);
+}
+
+.offer-line .Offer-image1,.offer-line .Offer-image2,.offer-line .Offer-image3{
+    width:100%;
+    border-radius: 15px;
+    
+}
+.Box-one , .Box-two , .Box-three {
+    display:flex;
+    flex-direction: column;
+    border: 1px transparent none;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.349),rgb(63, 60, 60),rgba(0, 0, 0, 0.397));
+    width:22%;
+    height:100%;
+    border-radius: 15px;
+    color:rgb(189, 135, 18);
+    font-family: 'Revalia', cursive;
+    text-align: center;
+}
+.submit-Order{
+    border:none;
+    border-radius: 5px;
+    background-color:rgb(189, 135, 18);
+    color:white;
+    font-family: 'Revalia', cursive;
+    padding:0 0 5.5px 0; 
+    margin-top:4%;
+    height:40px;
+    
+}
+
+.submit-Order:hover{
+    color:rgb(189, 135, 18);
+    background-color:white;
+}
+.order-flex{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+[type="checkbox"]{
+    margin-left:10px;
+}
+#pickup{
+    width:50%;
+}
+.Meal-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:150px;
+    grid-row-gap: 10px;
+    margin:0 auto;
+}
+.Meal-title{
+    margin-top:10%;
+    color:rgb(189, 135, 18);
+    
+}
+.order-type{
+    color:rgb(189, 135, 18);
+    margin-top:5%;
+}
+label{
+    color:rgb(189, 135, 18);
+}
+[type="number"]{
+    width:30%;
+    margin-left:10%;
+}
+[type="radio"]{
+    margin-left:10px;
+ 
+}
+
+@media only screen and (max-width:480px){
+    .offer-line{
+        display:flex;
+        flex-direction: column; 
+    }
+    .offers-title{
+        font-size:25px;
+    }
+    .offer-page-title{
+        font-size:20px;
+        margin-top:30%;
+    }
+    .offer-page-title span{
+        font-size:20px;
+    }
+    .Box-one , .Box-two , .Box-three {
+        display:flex;
+        flex-direction: column;
+        width:90%;
+        margin: 5% auto;
+    }
+
+    .Meal-list{
+        margin:0 20% 0 -13%;
+    }
+   
+    .order-type{
+       margin:0 20px 0 -50px;
+        width:70vw;
+    }
+
+    [type="number"]{
+        width:15vw;
+        margin-left:10%;
+    }
+    [type="text"]{
+        width:70vw;
+        margin:0 20px 0 -50px;
+    }
+    [type="tel"]{
+        width:70vw;
+        margin:0 20px 0 -50px;
+    }
+    [type="email"]{
+        width:70vw;
+        margin:0 20px 0 -50px;
+    }
+    .submit-Order{
+        margin-top:20%;
+    }
+
+}

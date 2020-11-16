@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 1.7;
+}
+/* Restaurant Name  */
+.Restaurant-name{
+    color:white;
+    font-family: 'Revalia', cursive;
+    text-align: center;
+    margin-top:10%;
+   
+}
+
+/* Restaurant slogan */
+.Slogan{
+    font-family: 'Parisienne', cursive;
+    font-size: 70px;
+    text-align: center;
+    color:white;
+    margin-top: 2%;
+    padding:0 0 5% 0;
+    text-shadow: 10px 5px #000000;
+}
+/* restaurant name (toca) */
+span{
+    color:rgb(206, 58, 22);
+    font-size: 35px;
+}
+/* OUr menu button */
+.Our-menu{
+    margin:0 30% 0 42%;
+    padding:1% 5% 1.5% 5%;
+    background-color:rgb(189, 135, 18);
+    border:1px rgb(189, 135, 18) solid;
+    color:white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Revalia', cursive;
+    text-decoration: none;
+    text-shadow: 2px 2px #000000;
+   
+}
+/* our menu button on hover  */
+.Our-menu:hover{
+    background-color:white;
+    color:rgb(189, 135, 18);
+    text-shadow: none;
+}
+
+/* About us image  */
+.About-us-img{
+    width:50%;
+    border:10px rgba(0, 0, 0, 0.416) solid;
+    border-radius: 15px;
+
+}
+.About-us-title{
+    color:white;
+    font-family: 'Revalia', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-top:5%;
+    text-shadow: 2px 2px #000000;
+}
+/* paragraph on the side of the about us image */
+.Flex-box1 p{
+    width:30%;
+
+}
+/* paragraph below the about us image */
+.Flex-box1{
+  display:flex;
+  justify-content: space-evenly;
+}
+/* wrapper of the about us section  */
+.wrapper{
+    border:1px transparent solid;
+    margin:0 5% 3% 0;
+    padding:5% 5%;
+    font-size: 13px;
+    color:white;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.219),rgba(63, 60, 60, 0.329),rgba(0, 0, 0, 0.288));
+    border-radius: 25px;
+    font-family: 'Revalia', cursive;
+    font-style: italic;
+    text-align: justify;
+}
+.wrapper p {
+   margin-top:2%;
+
+}
+.Home-image-flex{
+    display:flex;
+    justify-content: space-around;
+}
+.toca-img{
+    width:30%;
+    margin-top:3%;
+    border:10px rgba(0, 0, 0, 0.416) solid;
+    border-radius: 15px;
+}
+/* our menu title */
+#our-Menu{
+    margin-left:38%;
+    color:rgb(189, 135, 18);
+    font-family: 'Revalia', cursive;
+    font-size:40px;
+}
+hr{
+    width:70%;
+    margin: 1% auto;
+    color:white;
+    opacity:0.2;
+}
+.Menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border:1px transparent solid;
+    border-radius: 30px;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.1),rgb(63, 60, 60),rgba(0, 0, 0, 0.1));
+    width:80%;
+    margin:0 auto;
+    padding-bottom:5%;
+    font-family: 'Revalia', cursive;
+    text-shadow: 2px 2px #000000;
+    
+   
+}
+.Menu ul{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+}
+
+.Menu li{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+}
+
+.Menu-two , .Menu-one ,.Menu-three , .Menu-four{
+    width:45%;
+}
+
+.Menu-one , .Menu-three{
+    margin-left:9%;
+}
+.Menu ul{
+    width:80%;
+}
+.Menu ul li{
+    padding:3% 2% 3% 2%;
+}
+.Menu li:nth-of-type(odd){
+    border:1px transparent solid;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+}
+.Menu li:nth-of-type(even){
+    border:1px transparent solid;
+    background-color: rgba(128, 128, 128, 0.288);
+    border-radius: 15px;
+    
+}
+
+.Category{font-family: 'Parisienne', cursive; 
+    color:rgb(189, 135, 18);
+       
+}
+.Day{
+    color:rgb(189, 135, 18);
+   
+}
+#our-Daily-plates{
+    margin-top:5%;
+    margin-left:27%;
+    color:rgb(189, 135, 18);
+    font-family: 'Revalia', cursive;
+    font-size:40px;
+}
+
+.Category5{
+    text-align: center;
+    color:rgb(189, 135, 18);
+    font-family: 'Parisienne', cursive; 
+
+}
+.Category6{
+    margin-top:5%;
+    text-align: center;
+    color:rgb(189, 135, 18);
+    font-family: 'Parisienne', cursive; 
+}
+
+.catering-one , .catering-two , .catering-three{
+    display:flex;
+    width:25%;
+    flex-direction: column;
+    font-size: 14px;
+    color:white;
+    margin-left:8%;
+ 
+}
+.Catering-wrapper{
+    display:flex;
+    width:85%;
+    margin: 0 auto;
+    border:1px white solid;
+    padding:5% 5% 5% 0;
+    border:1px transparent solid;
+    border-radius: 30px;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0.1),rgb(63, 60, 60),rgba(0, 0, 0, 0.1));
+    font-family: 'Revalia', cursive;
+    text-shadow: 2px 2px #000000;
+    text-align: justify;
+}
+.Catering-wrapper img{
+    padding:10% 0;
+}
+#our-catering{
+    margin-left:38%;
+    color:rgb(189, 135, 18);
+    font-family: 'Revalia', cursive;
+    font-size:40px;
+}
+
+/* menus and catering ends here  */
+.bon-apetit{
+    color:rgb(189, 135, 18);
+    font-size:40px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+@media only screen and (max-width:480px){
+    .Restaurant-name{
+       font-size:15px;
+       margin-top:30%;
+    }
+    .Restaurant-name span{
+        font-size:15px;
+     }
+     .Slogan{
+        font-size: 28px;
+    }
+    .About-us-title{
+        font-size: 20px;
+        
+    }
+    span{
+        font-size: 20px;
+    }
+    .Our-menu{
+        margin:0 30% 0 30%;
+        padding:1% 10% 4.5% 10%;
+    }
+    .About-us-img{
+      width:100%;
+      height:50%;
+      border:none;
+    }
+    .Flex-box1 p{
+        width:100%;
+        font-size: 10px;
+    
+    }
+    .Flex-box1{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .wrapper{
+        font-size: 11px;
+        margin-left:5%;
+    }
+    .Home-image-flex{
+        display:flex;
+        flex-direction: column;
+        width:250vw;
+    }
+    .toca-img{
+        width:30%;
+        margin-top:3%;
+        border:10px rgba(0, 0, 0, 0.416) solid;
+        border-radius: 15px;
+    }
+    #our-Menu{
+        margin-left:34%;
+        font-size:20px;
+    }
+    .Menu{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    
+    .Menu-two , .Menu-one ,.Menu-three , .Menu-four{
+        width:100%;
+    }
+    .Menu-two ul , .Menu-four ul{
+        margin-left:50px;
+    }
+    .Daily-list{
+        margin-left:50px;
+    }
+    .Category{
+       text-align:center;   
+    }
+ 
+    #our-Daily-plates{
+        margin-top:5%;
+        margin-left:25%;
+        color:rgb(189, 135, 18);
+        font-family: 'Revalia', cursive;
+        font-size:20px;
+    }
+    
+    
+    .catering-one , .catering-two , .catering-three{
+      
+        width:90%;
+      
+     
+    }
+    .before-daily{
+        display:none;
+    }
+    .Catering-wrapper{
+        display:flex;
+        flex-direction: column;
+        width:90%;
+    }
+  
+}
+
+
+
+
+

@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 1.7;
+}
+
+.footers{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 10px;
+    margin:10% 35% 10% 30%;
+    width:70%;
+    padding:2% 2% 2% 2%;
+ 
+
+}
+.Facebook-logo,.Instagram-logo{
+    width:25%;
+}
+
+.Follow-us {
+    display:flex;
+}
+
+.Follow-us p{
+    color:white;
+    font-family: 'Revalia', cursive;
+}
+.Follow-us .follow-title{
+    color:rgb(189, 135, 18);
+   
+   
+}
+.contact-us .contact-title{
+    color:rgb(189, 135, 18);
+  
+}
+
+.contact-us{
+    color:white;
+    font-family: 'Revalia', cursive;
+    display:flex;
+    
+}
+.Email-logo {
+        width:25%;
+        border:5px solid black;
+        border-radius: 50%;
+        
+}
+.Facebook-logo,.Instagram-logo{
+    border:5px solid black;
+    border-radius: 50%;
+    width:20%;
+}
+
+.copyright{
+    color:rgb(189, 183, 183);
+    margin-top:5%;
+    margin-left:10%;
+    font-size: 12px;
+}
+
+@media only screen and (max-width:480px){
+    .footers{
+        margin:10% 35% 10% 19%;
+
+    }
+    .Facebook-logo,.Instagram-logo{
+        width:50%;
+    }
+    .Email-logo{
+        width:60%;
+    }
+
+    .copyright{
+        margin-top:10%;
+        font-size: 8px;
+    } 
+}
+

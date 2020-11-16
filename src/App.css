@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 1.7;
+}
+.App::before{
+    content:"";
+    background:linear-gradient(90deg, rgba(0, 0, 0, 0),rgba(49, 47, 47, 0)),url('./Images/Background.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -2;
+    
+    
+}
+.Logo-img{
+    position: absolute;
+    top:8%;
+    left:9%;
+    width:15%;
+    border:20px rgba(189, 135, 18 , 0.1) solid;
+    border-radius: 50%;
+    z-index: 2;
+}
+#react-burger-menu-btn , .bm-burger-button , .bm-overlay{
+    display:none;
+}
+
+@media only screen and (max-width:480px){
+    .Logo-img{
+        top:2%;
+        left:4%;
+        width:25%;
+       border:5px rgba(255, 145, 0, 0.445) solid;
+       
+    }
+    #react-burger-menu-btn , .bm-burger-button , .bm-overlay{
+        display:block;
+    }
+
+}
