@@ -52,10 +52,26 @@
         border-radius: 50%;
         
 }
-.Facebook-logo,.Instagram-logo{
+.Email-logo:hover{
+    border:5px solid red;
+}
+.Instagram-logo{
     border:5px solid black;
     border-radius: 50%;
     width:20%;
+}
+.Instagram-logo:hover{
+    border:5px solid red;
+ 
+}
+.Facebook-logo{
+    border:5px solid black;
+    border-radius: 50%;
+    width:24%;
+    
+}
+.Facebook-logo:hover{
+    border:5px red solid;
 }
 
 .copyright{
