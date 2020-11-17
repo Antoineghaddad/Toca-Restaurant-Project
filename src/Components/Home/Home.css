@@ -241,6 +241,24 @@ hr{
     font-family: 'Monoton', cursive;
     text-align: center;
 }
+.footer-res{
+    color:white;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+}
+.footer-title{
+    font-weight: bold;
+    color:rgb(189, 135, 18);
+    font-size: 18px;
+}
+.reservations{
+    color:rgb(228, 59, 29);
+    font-size: 25px;
+}
+.see-you{
+    color:rgb(228, 59, 29);
+    
+}
 @media only screen and (max-width:480px){
     .Restaurant-name{
        font-size:15px;

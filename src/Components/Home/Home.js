@@ -192,7 +192,13 @@ const Home = () => {
 
 
       </div>
-      <h1 className="bon-apetit">Bon&nbsp;&nbsp;&nbsp;&nbsp;Appétit🍽️</h1>
+      <div className="footer-res"><h1 className="bon-apetit">Bon&nbsp;&nbsp;&nbsp;&nbsp;Appétit🍽️</h1>
+      <p className="reservations">For reservations:</p>
+      <p><span className="footer-title">Email : </span>Restaurant@toca.com</p>
+      <p><span className="footer-title">Mobile :</span>961 3 311 494</p>
+      <p><span className="footer-title">Tel : </span>01 320 933</p>
+      <p className="see-you">See you!</p>
+      </div>
       <Footer/>
         </div>
     )
