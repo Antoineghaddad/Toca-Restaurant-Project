@@ -64,6 +64,9 @@
 
   .Navigation-bar ul{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     list-style-type: none;
     border: transparent none;

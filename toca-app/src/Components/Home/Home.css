@@ -6,7 +6,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     line-height: 1.7;
 }
@@ -78,6 +77,9 @@ span{
 /* paragraph below the about us image */
 .Flex-box1{
   display:flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-evenly;
 }
 /* wrapper of the about us section  */
@@ -99,6 +101,9 @@ span{
 }
 .Home-image-flex{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
 }
 .toca-img{
@@ -122,6 +127,10 @@ hr{
 }
 .Menu{
     display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -138,12 +147,19 @@ hr{
 }
 .Menu ul{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     width:30%;
 }
 
 .Menu li{
     display:flex;
+    display: -webkit-box;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-between;
     color:white;
 }
@@ -213,6 +229,9 @@ hr{
 }
 .Catering-wrapper{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     width:85%;
     margin: 0 auto;
     border:1px white solid;
@@ -293,6 +312,9 @@ hr{
     }
     .Flex-box1{
       display:flex;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       flex-direction: column;
       justify-content: space-evenly;
     }
@@ -302,6 +324,9 @@ hr{
     }
     .Home-image-flex{
         display:flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         flex-direction: column;
         width:250vw;
     }
@@ -317,6 +342,9 @@ hr{
     }
     .Menu{
         display:flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         flex-direction: column;
         width:100%;
     }

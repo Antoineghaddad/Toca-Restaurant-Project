@@ -23,18 +23,39 @@ form{
     width:50%;
     margin:0 auto;
 }
+[type="email"]{
+    height:40px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 18px;
+}
 [type="text"]{
     height:40px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 18px;
 
 }
 [type="tel"]{
     height:40px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 18px;
    
 }
 textarea{
-    height:70px;
-    border-radius: 5px;
-    margin-top:5%;
+    height:80px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 20px;
    
 }
 

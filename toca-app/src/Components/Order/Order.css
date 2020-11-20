@@ -1,5 +1,8 @@
 .offer-line{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-evenly;
     margin-top:10%;
     height:100%;
@@ -34,6 +37,9 @@ span{
 }
 .Box-one , .Box-two , .Box-three {
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     border: 1px transparent none;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.349),rgb(63, 60, 60),rgba(0, 0, 0, 0.397));
@@ -62,22 +68,22 @@ span{
 }
 .order-flex{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-evenly;
 }
 
-[type="checkbox"]{
-    margin-left:10px;
-}
+
 #pickup{
     width:50%;
 }
+
 .Meal-list{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap:150px;
-    grid-row-gap: 10px;
-    margin:0 auto;
+   display:flex;
+   flex-direction: column;
 }
+
 .Meal-title{
     margin-top:10%;
     color:rgb(189, 135, 18);
@@ -90,18 +96,37 @@ span{
 label{
     color:rgb(189, 135, 18);
 }
+select{
+    width:45%;
+    height:40px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 20px;
+}
 [type="number"]{
-    width:30%;
-    margin-left:10%;
+    width:45%;
+    height:40px;
+    background-color:rgba(255, 255, 0, 0.24);
+    color:white;
+    font-size:20px;
+    border:1px rgba(0, 0, 0, 0.616) solid;
+    font-size: 20px;
+    margin:2.5% 0 2.5% 10%;
 }
 [type="radio"]{
     margin-left:10px;
+    
  
 }
 
 @media only screen and (max-width:480px){
     .offer-line{
         display:flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         flex-direction: column; 
     }
     .offers-title{
@@ -116,6 +141,9 @@ label{
     }
     .Box-one , .Box-two , .Box-three {
         display:flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         flex-direction: column;
         width:90%;
         margin: 5% auto;

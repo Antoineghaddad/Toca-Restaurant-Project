@@ -9,6 +9,9 @@
 
 .footers{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     justify-content: space-between;
     font-size: 10px;
@@ -24,6 +27,9 @@
 
 .Follow-us {
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 }
 
 .Follow-us p{

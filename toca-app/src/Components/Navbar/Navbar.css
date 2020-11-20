@@ -10,6 +10,9 @@
 
 .Navigation-bar ul{
 display:flex;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
 list-style-type: none;
 justify-content: flex-end;
 }
