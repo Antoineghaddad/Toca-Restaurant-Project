@@ -4,7 +4,7 @@
 
 fieldset{
     margin:10% auto;
-    width:80%;
+    max-width:80%;
     color:white;
     font-family: 'Revalia', cursive;
     font-size:15px;
@@ -81,7 +81,11 @@ label{
     color:rgb(189, 135, 18);
     background-color:white;
 }
-
+.events-div{
+    max-width:80%;
+    text-align: justify;
+    margin: 0 auto;
+}
 @media only screen and (max-width:480px){
     fieldset{
         width:100%;

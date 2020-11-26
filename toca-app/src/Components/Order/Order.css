@@ -16,7 +16,7 @@
     font-family: 'Parisienne', cursive;
     text-align: center;
     margin-top:2%;
-    font-size:60px;
+    font-size:50px;
     text-shadow: 10px 5px #000000;
 }
 .offer-page-title{
@@ -24,6 +24,7 @@
     font-family: 'Revalia', cursive;
     text-align: center;
     margin-top:10%;
+    font-size: 30px;
     text-shadow: 10px 5px #000000;
 }
 span{
@@ -35,21 +36,36 @@ span{
     border-radius: 15px;
     
 }
-.Box-one , .Box-two , .Box-three {
+.Box-one  {
     display:flex;
+    flex-wrap: wrap;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-direction: column;
     border: 1px transparent none;
-    background:linear-gradient(90deg, rgba(0, 0, 0, 0.349),rgb(63, 60, 60),rgba(0, 0, 0, 0.397));
-    width:22%;
+    width:32%;
     height:100%;
     border-radius: 15px;
-    color:rgb(189, 135, 18);
+    color:white;
     font-family: 'Revalia', cursive;
     text-align: center;
 }
+.offer-line{
+   display:flex;
+   flex-wrap: wrap;
+ }
+
+ .offer_image{
+    border:20px rgba(189, 135, 18, 0.24) solid;
+    border-radius: 15px;
+    min-width:100%;
+ }
+ .Box-one p {
+     border:1px transparent solid;
+     background-color: rgba(0, 0, 0, 0.185);
+     
+ }
 .submit-Order{
     border:none;
     border-radius: 5px;
@@ -97,7 +113,7 @@ label{
     color:rgb(189, 135, 18);
 }
 select{
-    width:45%;
+    width:35%;
     height:40px;
     background-color:rgba(255, 255, 0, 0.24);
     color:white;
@@ -106,7 +122,7 @@ select{
     font-size: 20px;
 }
 [type="number"]{
-    width:45%;
+    width:35%;
     height:40px;
     background-color:rgba(255, 255, 0, 0.24);
     color:white;
@@ -139,15 +155,9 @@ select{
     .offer-page-title span{
         font-size:20px;
     }
-    .Box-one , .Box-two , .Box-three {
-        display:flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        flex-direction: column;
-        width:90%;
-        margin: 5% auto;
-    }
+.Box-one{
+    margin:0 7% 0 0%;
+}
 
     .Meal-list{
         margin:0 20% 0 -13%;
@@ -160,22 +170,26 @@ select{
 
     [type="number"]{
         width:15vw;
-        margin-left:10%;
+        margin:0 20px 0 5;
     }
     [type="text"]{
         width:70vw;
-        margin:0 20px 0 -50px;
+        margin:0 20px 0 -70px;
     }
     [type="tel"]{
         width:70vw;
-        margin:0 20px 0 -50px;
+        margin:0 20px 0 -70px;
     }
     [type="email"]{
         width:70vw;
-        margin:0 20px 0 -50px;
+        margin:0 20px 0 -70px;
     }
     .submit-Order{
         margin-top:20%;
+    }
+    textarea{
+        margin:0 20px 0 -70px;
+
     }
 
 }

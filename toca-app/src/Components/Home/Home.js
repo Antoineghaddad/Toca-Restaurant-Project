@@ -7,11 +7,81 @@ import Second from '../../Images/offer2.jpg';
 import Toca1 from '../../Images/toca1.png';
 import Toca2 from '../../Images/toca2.png';
 import Toca3 from '../../Images/toca3.png';
+import {useState , useEffect} from 'react';
+import Axios from 'axios';
 
 
 
 
 const Home = () => {
+  const [aboutUs , setAboutus] = useState([])
+
+  useEffect(() => {
+    Axios.get("http://localhost:3010/About-us")
+    .then((response) => {
+        setAboutus(response.data)
+    })
+  }, [])
+
+  const [menuItems , setMenuItems] = useState([])
+    
+
+  useEffect(() => {
+    Axios.get("http://localhost:3010/Menu")
+    .then((response) => {
+        setMenuItems(response.data)
+    })
+  }, [])
+
+  const [dailyPlates , setDailyPlates] = useState([])
+
+  useEffect(() => {
+      Axios.get("http://localhost:3010/Daily-plates")
+      .then((response) => {
+          setDailyPlates(response.data)
+      })
+    }, [])
+
+    const [catering , setCatering] = useState([])
+    
+
+    useEffect(() => {
+      Axios.get("http://localhost:3010/Catering")
+      .then((response) => {
+          setCatering(response.data)
+      })
+    }, [])
+
+    const [sandwish , setSandwish] = useState([])
+    
+
+    useEffect(() => {
+      Axios.get("http://localhost:3010/sandwish")
+      .then((response) => {
+          setSandwish(response.data)
+      })
+    }, [])
+
+    const [deserts , setDeserts] = useState([])
+    
+
+    useEffect(() => {
+      Axios.get("http://localhost:3010/deserts")
+      .then((response) => {
+          setDeserts(response.data)
+      })
+    }, [])
+
+    const [drinks , setDrinks] = useState([])
+    
+
+    useEffect(() => {
+      Axios.get("http://localhost:3010/drinks")
+      .then((response) => {
+          setDrinks(response.data)
+      })
+    }, [])
+    
 
 
     return (
@@ -22,33 +92,20 @@ const Home = () => {
       <a href="#our-Menu" className="Our-menu">Our Menu</a>
       <h1 className="About-us-title">About <span>us</span></h1>
       <div className="wrapper">
-      <div className="Flex-box1">
-      <img className="About-us-img" src={Aboutus} alt="aboutus"/>
-      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dum printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the g and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the</p>
-      </div>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the</p>
-         <div className="Home-image-flex">
-          <img className="toca-img" src={Toca1} alt="toca1"/>
-          <img className="toca-img" src={Toca2} alt="toca2"/>
-          <img className="toca-img" src={Toca3} alt="toca3"/>
-         </div>
-         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the</p>
+     
+      {aboutUs.map((val)=>{
+                return <div className="Flex-box1" key={Math.random()}>
+                  <img className="About-us-img" src={`http://localhost:3010/${val.image1}`} alt ="" />
+                  <div className="p"> 
+              <p className="aboutuss"> {val.About_us} </p>
+              </div>
+                    </div>
+            })}
+           
+   
+     
+       
+         
        
       </div>
       <h1 id="our-Menu">❋Our menu❋</h1>
@@ -56,101 +113,66 @@ const Home = () => {
       <div className="Menu">
       
     <div className="Menu-one">
-  <ul>
-  <h1 className="Category">❅Plates❅</h1>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-  
+    <h1 className="Category">❅Plates❅</h1>
+    {menuItems.map((val)=>{
+    return <div className="Menu-div" key={Math.random()}>
+    <ul>
+    <li><p>{val.Menu_name}</p>{val.Menu_price}</li>
+
+    
   </ul>
+        </div>
+  })}
     </div>
 
     <div className="Menu-two">
         <h1 className="Category">❅Sandwishes❅</h1>
+        {sandwish.map((val)=>{
+    return <div className="Menu-div" key={Math.random()}>
     <ul>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
+    <li><p>{val.sandwish_name}</p>{val.sandwish_price}</li>
+
     
   </ul>
+        </div>
+  })}
     </div>
 
     <div className="Menu-three">
-    <ul>
     <h1 className="Category">❅Deserts❅</h1>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
+    {deserts.map((val)=>{
+      
+    return <div className="Menu-div" key={Math.random()}>
+    <ul>
+    <li><p>{val.desert_name}</p>{val.desert_price}</li>
+
     
   </ul>
+        </div>
+  })}
     </div>
 
     <div className="Menu-four">
-    <ul>
     <h1 className="Category">❅Beverage❅</h1>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
-      <li><p>Meal</p>Price</li>
+    {drinks.map((val)=>{
+    return <div className="Menu-div" key={Math.random()}>
+    <ul>
+    <li><p>{val.drinks_name}</p>{val.drinks_price}</li>
+
     
   </ul>
+        </div>
+  })}
     </div>
     <hr className="before-daily"></hr>
+   
     <ul className="Daily-list">
     <h1 id="our-Daily-plates">❅Daily Plates❅</h1>
-    <p className="Day">Monday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Tuesday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Wednesday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Thurdsay:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Friday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Saturday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
-      <p className="Day">Sunday:</p>
-      <li className="daily"><p>Meal</p>Price</li>
+    {dailyPlates.map((value) => {
+          return <div className="daily-div" key={Math.random()}>
+            <li className="Daily"><p className="daily-day">{value.Daily_day}</p><p className="Meal_name">{value.Meal_name}</p><p>{value.Meal_price}</p></li>
+                 </div>
+              })}
       </ul>
      
  
@@ -161,34 +183,17 @@ const Home = () => {
 
       <div className="catering-one">
       <h1 className="Category6">❅Our Catering❅</h1>
-      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-         <img className="blog1" src={First} alt="blog1"/>
-         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type spec. Lorem Ipsum has been</p>
-</div>
-
-<div className="catering-two">
-<h1 className="Category6">❅How we Cook❅</h1>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-         <img className="blog2" src={Second} alt="blog2"/>
-         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standad typesetting industry. Lorem Ipsum has been the</p>
-</div>
-
-<div className="catering-three">
-<h1 className="Category6">❅Our Quality❅</h1>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-         of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-         <img className="blog2" src={Second} alt="blog2"/>
-         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-         industry's standard dummy .g industry. Lorem Ipsum has been the</p>
-</div>
+      <div>   {catering.map((val)=>{
+                return <div className="Catering-div" key={Math.random()}>
+                    <div className="catering1"><p>{val.Our_catering}</p></div>
+                    <img className="catering-img" src={`http://localhost:3010/${val.image1}`} alt ="" />
+                    <hr></hr>
+                    </div>
+                    
+              })}</div>
+         
+       
+           </div>
 
 
       </div>
